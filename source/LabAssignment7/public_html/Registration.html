@@ -1,0 +1,69 @@
+<html ng-app="register">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+        <script src="RegistrationSaving.js"></script>
+    <title>Registration</title>
+</head>
+<body ng-controller="RegistrationController">
+<div id="tablestyle">
+            <table>
+                <tr>
+                    <td>
+                        First Name:
+                    </td>
+                    <td>
+                        <input type="text" id="FirstName" ng-model="first" placeholder="Enter First Name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last Name:
+                    </td>
+                    <td>
+                        <input type="text" id="LastName" ng-model="last" placeholder="Enter Last Name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email ID:
+                    </td>
+                    <td>
+                        <input type="text" id="EmaiId" ng-model="email" placeholder="Enter Email Id"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone Number:
+                    </td>
+                    <td>
+                        <input type="text" id="PhoneNumber" ng-model="phone" placeholder="Enter Phoine Number"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        UserName:
+                    </td>
+                    <td>
+                        <input type="text" id="UserName" ng-model="user" placeholder="Enter User Name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+                        <input type="password" id="Password" ng-model="pass" placeholder="Enter Password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="Login" name="login" ng-click="SaveRegistration(first,last,email,phone,user,pass)">Login</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>
