@@ -5,13 +5,40 @@
         <script src="angular.min.js"></script>
         <script src="RegistrationSaving.js"></script>
     <title>Registration</title>
+    <style>
+        #htmlbody{
+                position: absolute;
+                top: 10px;
+                left: 320px;
+                right: -40px;
+                bottom: -40px;
+                width: auto;
+                height: auto;
+                background-image: url(http://www.psdgraphics.com/file/2016/red-roses-illustration.png);
+                background-size: cover;
+                -webkit-filter: blur(0px);
+                z-index: 0;
+            }
+            #tablebody
+            {
+                position:absolute;
+                top:50%;
+                left: 20%;
+            }
+            #tablestyle
+            {
+                height: 50%;
+            }
+    </style>
 </head>
-<body ng-controller="RegistrationController">
+<body ng-controller="RegistrationController" id="htmlbody">
 <div id="tablestyle">
-            <table>
+            <table id="tablebody">
                 <tr>
                     <td>
+                        <div style="color: white">
                         First Name:
+                        </div>
                     </td>
                     <td>
                         <input type="text" id="FirstName" ng-model="first" placeholder="Enter First Name"/>
@@ -19,7 +46,9 @@
                 </tr>
                 <tr>
                     <td>
+                        <div style="color: white">
                         Last Name:
+                        </div>
                     </td>
                     <td>
                         <input type="text" id="LastName" ng-model="last" placeholder="Enter Last Name"/>
@@ -27,7 +56,9 @@
                 </tr>
                 <tr>
                     <td>
+                        <div style="color: white">
                         Email ID:
+                        </div>
                     </td>
                     <td>
                         <input type="text" id="EmaiId" ng-model="email" placeholder="Enter Email Id"/>
@@ -35,7 +66,9 @@
                 </tr>
                 <tr>
                     <td>
+                        <div style="color: white">
                         Phone Number:
+                        </div>
                     </td>
                     <td>
                         <input type="text" id="PhoneNumber" ng-model="phone" placeholder="Enter Phoine Number"/>
@@ -43,7 +76,9 @@
                 </tr>
                 <tr>
                     <td>
+                        <div style="color: white">
                         UserName:
+                        </div>
                     </td>
                     <td>
                         <input type="text" id="UserName" ng-model="user" placeholder="Enter User Name"/>
@@ -51,7 +86,9 @@
                 </tr>
                 <tr>
                     <td>
+                        <div style="color: white">
                         Password:
+                        </div>
                     </td>
                     <td>
                         <input type="password" id="Password" ng-model="pass" placeholder="Enter Password"/>

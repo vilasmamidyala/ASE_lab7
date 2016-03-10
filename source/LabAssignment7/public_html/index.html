@@ -22,7 +22,7 @@
                 bottom: -40px;
                 width: auto;
                 height: auto;
-                background-image: url(Background.jpg);
+                background-image: url(http://www.psdgraphics.com/file/2016/red-roses-illustration.png);
                 background-size: cover;
                 -webkit-filter: blur(0px);
                 z-index: 0;
@@ -39,7 +39,7 @@
             }
         </style>
     </head>
-    <body ng-controller="LoginController">
+    <body ng-controller="LoginController" id="htmlbody">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -49,7 +49,9 @@
             <table id="tablebody">
                 <tr>
                     <td>
-                        UserName:
+                        <div style="color: white">
+                            <h4>UserName:</h4>
+                        </div>
                     </td>
                     <td>
                         <input type="text" id="UserName" name="user" placeholder="Enter User Name"/>
@@ -57,7 +59,9 @@
                 </tr>
                 <tr>
                     <td>
-                        Password:
+                        <div style="color: white">
+                            <h4>Password:</h4>
+                        </div>
                     </td>
                     <td>
                         <input type="password" id="Password" name="pass" placeholder="Enter Password"/>

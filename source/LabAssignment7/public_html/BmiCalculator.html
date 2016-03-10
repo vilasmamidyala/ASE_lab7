@@ -2,35 +2,58 @@
 <html>
 <head>
     <meta charset="ISO-8859-1">
-    <title>BMI Calculator</title>
+    <title>Height Calculator</title>
     <style>
-        table{
-            border: 1px #000 solid;
-            caption-side: top;
-            background-color: blue;
-            align-self: center;
-            position: absolute;
-            top: 10%;
-            width: fit-content;
-            right: 50%;
-        }
+        
+        #htmlbody{
+                position: absolute;
+                top: 10px;
+                left: 320px;
+                right: -40px;
+                bottom: -40px;
+                width: auto;
+                height: auto;
+                background-image: url(http://www.psdgraphics.com/file/2016/red-roses-illustration.png);
+                background-size: cover;
+                -webkit-filter: blur(0px);
+                z-index: 0;
+            }
+            #tablebody
+            {
+                position:absolute;
+                top:50%;
+                left: 20%;
+            }
+            #tablestyle
+            {
+                height: 50%;
+            }
     </style>
 </head>
-<body style="position: absolute; top: 30%; right:50%;">
-<table>
-    <caption><h2>BMI Calculator</h2></caption>
+<body id="htmlbody">
+    <div>
+        <button id="Deactivate" onclick="window.location='Deactivate.html'" style="position: absolute; right: 100%">DeActivateAccount</button>
+   
+        <button id="Profile" onclick="window.location='Profile.html'" style="position: absolute; right:10%;">ChangePassword</button>
+    </div>
+    <div id="tablestyle">
+        <table style="position: absolute; top: 40%; right:50%;" id="tablebody">
+            <caption style="color: white"><h2>Height Converter</h2></caption>
     <tr>
-        <td>Weight:</td>
-        <td><input type="text" name="weight" id="Weight"/></td>
+        <td>Feet:</td>
+        <td><input type="text" name="weight" id="Height2"/></td>
     </tr>
     <tr>
-        <td>Height:</td>
+        <td>Inch:</td>
         <td><input type="text" name="height" id="Height"/></td>
     </tr>
     <tr>
         <td></td>
-        <td><a href="http://localhost:8080/LabAssignment6/lab/bmicalculator/bmi/1.65/68"><button>Calculate BMI</button></a></td>
+
+        <!--http://localhost:8080/LabAssignment6/lab/bmicalculator/bmi/1.65/68-->
+        <td><a href="http://localhost:8080/AssignmentLab6/conversion/hconvert"><button>Calculate Height in CM</button></a></td>
     </tr>
 </table>
+    </div>
 </body>
 </html>
